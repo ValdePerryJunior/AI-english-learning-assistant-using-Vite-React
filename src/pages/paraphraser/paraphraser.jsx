@@ -23,7 +23,7 @@ function Paraphraser() {
       >
         <div className="max-w-4xl mx-auto">
           <Heading Icon={ParaphraserIcon} isDark={isDark} title="Paraphraser" 
-            note="Refine your sentence and get appropriate title!" />
+            note="Rewrite your sentence!" />
           <div className="flex justify-center">
             <span className="font-semibold text-red-500">Caution: &nbsp; </span>
             <span>Paragraph should not exceed 160 characters.</span>

@@ -17,7 +17,7 @@ const RightSection = ({isDark}) => {
         </div>
         <div className="ml-10 flex items-center gap-4">
           <i className="fas fa-volume-up text-purple-500 text-xl"></i>
-          <span className="font-roboto">Pronunciation Guide</span>
+          <span className="font-roboto">Pronunciation Check</span>
         </div>
         <div className="flex items-center justify-center absolute -bottom-4 -right-4 bg-[#2F80ED] text-white p-4 rounded-full w-[60px] h-[60px]">
           <i className="fas fa-microphone-alt text-2xl"></i>

@@ -61,7 +61,7 @@ const CoreSection = ({isDark}) => {
         <div className="flex flex-col space-y-6">
           <div>
             <span>Characters: </span>
-            <span className={`${text.length>160 ? "text-red-500" : "text-black"}`}>{text.length || "0"}</span>
+            <span className={`${text.length>160 ? "text-red-500" : "text-black"} ${!(text.length>160) && isDark && "text-white"}`}>{text.length || "0"}</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex flex-col space-y-4">

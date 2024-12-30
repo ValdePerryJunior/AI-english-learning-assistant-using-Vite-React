@@ -11,25 +11,25 @@ function App() {
 
   const { isSignedIn } = useUser();
   
-  const ProtectedRoute = () => {
-    const location = useLocation();
-    return isSignedIn ? (
-      <Outlet />
-    ) : (
-      <Navigate to='/sign-in' replace state={{ from: location}} />
-    )
-  }
+  // const ProtectedRoute = () => {
+  //   const location = useLocation();
+  //   return isSignedIn ? (
+  //     <Outlet />
+  //   ) : (
+  //     <Navigate to='/sign-in' replace state={{ from: location}} />
+  //   )
+  // }
 
   return (
     <Routes>
       <Route path='/' element={<MainPage />} />
       <Route path='/sign-up/*' element={<Signup />} />
       <Route path='/sign-in/*' element={<Signin />} />
-      <Route element={<ProtectedRoute />}>
+      {/* <Route element={<ProtectedRoute />}> */}
         <Route path='/grammarChecker' element={<GrammarCheckerPage />} />
         <Route path='/paraphraser' element={<Paraphraser />} />
         <Route path='/pronunciation' element={<Pronunciation />} />
-      </Route>
+      {/* </Route> */}
     </Routes>
   )
 }
